@@ -5,8 +5,6 @@
 #include<graphics.h>
 void getup()
 {
-//Chrome dinosaur game C++ edition
-//Made by Rohith Vinod
 	textcolor(BLACK); //adds text
 	textbackground(15);
 	clrscr();
@@ -15,14 +13,8 @@ void getup()
 	window(62,2,80,3);
 	cprintf("SCORE : ");
 	window(58,5,80,25);
-//	cprintf("Made By RV");
-	window(58,4,80,25);
-//	cprintf("Dino game C++ edition");
-	window(1,1,80,25);
-//	cprintf("V.0.13");
-	window(1,25,80,25);
 	for(int x=0;x<79;x++)
-	cprintf("ß");
+	cprintf("ÃŸ");
 	textcolor(0);
 }
 
@@ -38,27 +30,27 @@ void ds(int jump=0)
 	else t++;
 	window(2,15-t,18,25);
 	cprintf("                 "); //character
-	cprintf("         ÜÜÜÜÜÜÜ ");
-	cprintf("        ÛÛÛßÛÛÛÛÛ");
-	cprintf("        ÛÛÛÛÛÛÛÛÛ");
-	cprintf("Û       ÛÛÛÛÛÛÜÜ ");
-	cprintf("ÛÛÜ   ÜÛÛÛÛÛÛ    ");
-	cprintf(" ßÛÜÜÛÛÛÛÛÛÛÛßßÛ ");
-	cprintf("  ßÛÛÛÛÛÛÛÛÛß    ");
-	cprintf("   ßÛÛÛÛÛÛß      ");
+	cprintf("         ÃœÃœÃœÃœÃœÃœÃœ ");
+	cprintf("        Ã›Ã›Ã›ÃŸÃ›Ã›Ã›Ã›Ã›");
+	cprintf("        Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›");
+	cprintf("Ã›       Ã›Ã›Ã›Ã›Ã›Ã›ÃœÃœ ");
+	cprintf("Ã›Ã›Ãœ   ÃœÃ›Ã›Ã›Ã›Ã›Ã›    ");
+	cprintf(" ÃŸÃ›ÃœÃœÃ›Ã›Ã›Ã›Ã›Ã›Ã›Ã›ÃŸÃŸÃ› ");
+	cprintf("  ÃŸÃ›Ã›Ã›Ã›Ã›Ã›Ã›Ã›Ã›ÃŸ    ");
+	cprintf("   ÃŸÃ›Ã›Ã›Ã›Ã›Ã›ÃŸ      ");
 	if(jump==1 || jump==2){
-	cprintf("   ÛÛß ßÛ        ");
-	cprintf("   ÛÜ   ÛÜ       ");
+	cprintf("   Ã›Ã›ÃŸ ÃŸÃ›        ");
+	cprintf("   Ã›Ãœ   Ã›Ãœ       ");
 	}else if(a==1)
 	{
-	cprintf("   ßÛÛßß ßßß     "); //jump animation 1
-	cprintf("     ÛÜ          ");
+	cprintf("   ÃŸÃ›Ã›ÃŸÃŸ ÃŸÃŸÃŸ     "); //jump 1
+	cprintf("     Ã›Ãœ          ");
 	a=2;
 	}
 	else if(a==2)
 	{
-	cprintf("    ßÛÜ ßÛ       ");   //jump animation 2
-	cprintf("         ÛÜ      ");
+	cprintf("    ÃŸÃ›Ãœ ÃŸÃ›       ");   //jump 2
+	cprintf("         Ã›Ãœ      ");
 	a=1;
 	}
 	cprintf("                ");
@@ -78,11 +70,11 @@ void obj()
 	cprintf("         ");
 	}
 	window(74-x,20,80-x,25);
-	cprintf(" Û   Û ");
-	cprintf(" Û   Û ");   //obstacle
-	cprintf(" ßßÛßß ");
-	cprintf("   Û   ");
-	cprintf("   Û   ");
+	cprintf(" Ã›   Ã› ");
+	cprintf(" Ã›   Ã› ");   //obstacle
+	cprintf(" ÃŸÃŸÃ›ÃŸÃŸ ");
+	cprintf("   Ã›   ");
+	cprintf("   Ã›   ");
 	x++;
 	if(x==73)
 	{
